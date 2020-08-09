@@ -20,3 +20,22 @@ export default function App() {
     </NavigationContainer>
   );
 }
+// integrating quotes api?
+fetch(
+  "https://andruxnet-random-famous-quotes.p.rapidapi.com/?count=4&cat=famous",
+  {
+    method: "POST",
+    headers: {
+      "x-rapidapi-host": "andruxnet-random-famous-quotes.p.rapidapi.com",
+      "x-rapidapi-key": "5aa713c724msh5c58860be73bcc0p1ac4e7jsn9b8f1bb465cd",
+      "content-type": "application/x-www-form-urlencoded",
+    },
+    body: {},
+  }
+)
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
