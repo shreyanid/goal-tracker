@@ -5,6 +5,7 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import GoalInputScreen from "./app/screens/GoalInputScreen";
+import GoalSpaceScreen from "./app/screens/GoalSpaceScreen";
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
         <Stack.Screen name="GoalInputScreen" component={GoalInputScreen} />
+        <Stack.Screen name="GoalSpaceScreen" component={GoalSpaceScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
