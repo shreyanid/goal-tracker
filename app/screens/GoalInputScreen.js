@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TextInput } from "react-native";
 
-const GoalInput = () => {
+const GoalInputScreen = () => {
   const [goal, onChangeText] = useState("Useless Placeholder");
 
   return (
@@ -13,4 +13,4 @@ const GoalInput = () => {
   );
 };
 
-export default GoalInput;
+export default GoalInputScreen;

@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
-import GoalInput from "./app/screens/GoalInput";
+import GoalInputScreen from "./app/screens/GoalInputScreen";
 
 const Stack = createStackNavigator();
 
@@ -13,7 +13,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
-        <Stack.Screen name="GoalInput" component={GoalInput} />
+        <Stack.Screen name="GoalInputScreen" component={GoalInputScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
